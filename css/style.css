@@ -1238,15 +1238,15 @@ main {
 }
 
 .hero--founders {
-  background-image: url("../../img/patterns/01.png");
+  background-image: url('"../img/patterns/01.png"');
 }
 
 .hero--about {
-  background-image: url("../../img/patterns/02.png");
+  background-image: url("../img/patterns/02.png");
 }
 
 .hero--portfolio {
-  background-image: url("../../img/patterns/03.png");
+  background-image: url("../img/patterns/03.png");
 }
 
 .clarity__title {
