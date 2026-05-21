@@ -1238,7 +1238,7 @@ main {
 }
 
 .hero--founders {
-  background-image: url('"../img/patterns/01.png"');
+  background-image: url("../img/patterns/01.png");
 }
 
 .hero--about {
