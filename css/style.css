@@ -1660,7 +1660,7 @@ main {
   }
 }
 .content-block__email-text {
-  color: #e2e8f0;
+  color: #64748b;
   max-width: 221px;
 }
 @media (max-width: 480.98px) {
