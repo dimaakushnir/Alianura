@@ -450,7 +450,7 @@ main {
 }
 
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -472,12 +472,6 @@ main {
 
 .header.header-home .header__burger span {
   background: #fff;
-}
-
-.header.scroll .header__main {
-  background: rgba(248, 250, 252, 0.5);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
 }
 
 .header__main {
@@ -614,9 +608,7 @@ main {
   position: absolute;
   width: 40px;
   height: 40px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: none;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -929,7 +921,7 @@ main {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  padding: 80px 0;
+  padding: 100px 0 80px 0;
 }
 
 .home__row {
@@ -972,18 +964,6 @@ main {
 
 .home__text {
   max-width: 527px;
-}
-
-.video-desk {
-  display: block;
-}
-
-.video-tablet {
-  display: none;
-}
-
-.video-mob {
-  display: none;
 }
 
 .hero {
@@ -1435,8 +1415,6 @@ main {
   width: 663px;
   border-radius: 10px;
   overflow: hidden;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
   opacity: 0;
 }
 
@@ -2355,6 +2333,8 @@ main {
     width: 100%;
     opacity: 1;
     padding-bottom: 0%;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 }
 
@@ -2432,6 +2412,12 @@ main {
     width: 100%;
   }
 
+  .mobile-header__close {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+
   .mobile-header__inner {
     padding: 0 40px;
   }
@@ -2465,7 +2451,7 @@ main {
   }
 
   .home {
-    padding: 60px 0;
+    padding: 100px 0 60px 0;
   }
 
   .home__row {
@@ -2484,14 +2470,6 @@ main {
 
   .home__text {
     max-width: 460px;
-  }
-
-  .video-desk {
-    display: none;
-  }
-
-  .video-tablet {
-    display: block;
   }
 
   .hero__text {
@@ -2916,7 +2894,7 @@ main {
   }
 
   .home {
-    padding: 40px 0;
+    padding: 100px 0 40px 0;
   }
 
   .home__row {
@@ -2929,14 +2907,6 @@ main {
 
   .home__title {
     margin-top: 16px;
-  }
-
-  .video-tablet {
-    display: none;
-  }
-
-  .video-mob {
-    display: block;
   }
 
   .hero__text {
