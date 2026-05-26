@@ -889,6 +889,51 @@ main {
   transition: all 0.3s ease-in-out;
 }
 
+:root {
+  --brand-gold: #C3A06F;
+  --brand-ink: #2b2b2b;
+  --pl-bg: #ffffff;
+  /* matches the clip's white background */
+}
+
+/* ---------- LOGO SPLASH OVERLAY ---------- */
+
+#preloader {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: var(--pl-bg);
+  -webkit-transition: all 0.8s cubic-bezier(0.25, 0.74, 0.22, 0.99);
+  transition: all 0.8s cubic-bezier(0.25, 0.74, 0.22, 0.99);
+}
+
+#preloader.hide {
+  top: -120%;
+  pointer-events: none;
+}
+
+#preloader video {
+  width: min(72vw, 520px);
+  height: auto;
+  display: block;
+  /* multiply blends the white video edges seamlessly into the white bg
+     and keeps the gold/ink crisp; remove if you change --pl-bg */
+  mix-blend-mode: multiply;
+}
+
 .home {
   position: relative;
   min-height: 100dvh;
